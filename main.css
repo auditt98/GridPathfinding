@@ -1,0 +1,27 @@
+.box{
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    display: inline-flex;
+    text-align: center;
+    vertical-align: center;
+}
+.row{
+    display: flex;
+}
+.wall{
+    background-color: red;
+}
+.start{
+    background-color: yellow;
+}
+.end{
+    background-color: green;
+}
+.traced{
+    background-color: blue;
+    color: white
+}
+#explaination{
+    display: inline;
+}
