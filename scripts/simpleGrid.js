@@ -1,3 +1,13 @@
+/*modify the function so that it takes in a map from a text file, with 
+count of columns and rows to be variables. 
+output traced route into a file
+properly implement A*
+
+how to avoid high traffic?
+do we treat it as a wall?
+
+
+*/
 class Cordinate{
     constructor(x, y, count){
         this.x = x
@@ -15,7 +25,8 @@ class Cordinate{
 
 
 let boxes = document.getElementsByClassName("box")
-let wall = [14, 21, 22, 25, 37, 45, 51, 52, 53, 57, 62, 65, 66, 67, 74, 75, 77]
+let wall = [14, 21, 22, 24, 25, 34, 37, 51, 52, 53, 57, 62, 65, 66, 67, 74, 75, 77]
+// let wall = []
 let rowCount = 10;
 let colCount = 10;
 let mainList = []
