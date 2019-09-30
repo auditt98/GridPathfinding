@@ -10,10 +10,11 @@
     display: flex;
 }
 .wall{
-    background-color: red;
+    background-color: black;
 }
 .start{
-    background-color: yellow;
+    background-color: red;
+    color:white;
 }
 .end{
     background-color: green;
