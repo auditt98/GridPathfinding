@@ -287,9 +287,6 @@ function move(event){
     
 }
 
-
-
-
 function reset(){
     mainList = []
     start = 0
