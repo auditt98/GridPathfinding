@@ -6,6 +6,8 @@ properly implement A*
 how to avoid high traffic?
 do we treat it as a wall?
 
+fix a problem when start box is the same as end box, path still got calculated
+
 
 */
 class Cordinate{
@@ -39,11 +41,6 @@ let endX = 0
 let endY = 0
 let startCor = ""
 let endCor = ""
-
-//calculate manhattan distance between two cells - used in a*
-function calculateManhattan(current, goal){
-    return Math.abs(current.x - goal.x) + Math.abs(current.y - goal.y) 
-}
 
 //build the wall and make mexico pay for it
 function buildWalls(){
@@ -267,7 +264,7 @@ function move(event){
             moveDirText.innerHTML = "RIGHT"
             tempStart = new Cordinate(oldStart.x, oldStart.y + 1, 0)
         }
-        if(checkType(tempStart) != "wall"){
+        if(checkType(tempStart) != "wall" && checkType(tempStart) != "end"){
             startCor = tempStart
             for(let i = 0; i < boxes.length; i++){
                 if(boxes[i].classList.contains("start")){
